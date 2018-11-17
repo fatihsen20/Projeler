@@ -1,5 +1,4 @@
-//Fatih Þen
-//18253011
+//Fatih Åžen
 #include<stdio.h>
 #include<stdlib.h>
 int main()
