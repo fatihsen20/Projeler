@@ -3,10 +3,13 @@
 #include<stdlib.h>
 int main()
 {
+	
+	int N , a , X , toplam1=0 , toplam2=0 , toplam3=1;
+	while(a!=0){
 	printf("++++++++++++++++++++++++++++++++++++++++++++++++++\n\n");
 	printf(" Lutfen menuden birini seciniz.\n\n 0'dan N'e kadar olan cift sayilari toplama = 1\n\n 0'dan N'e kadar X'in katlarini toplama = 2\n\n N faktoriyel hesaplama = 3\n\n Cikmak icin = 0\n\n");      
 	printf("++++++++++++++++++++++++++++++++++++++++++++++++++\n\n");
-	int N , a , X , toplam1=0 , toplam2=0 , toplam3=1;
+	
 	scanf("%d" , &a);
 	
 	if(a==1)
@@ -18,6 +21,7 @@ int main()
 			toplam1+=i;
 			}		
 			printf("0'dan %d'e kadar olan cift sayilarin toplami= %d\n" , N ,  toplam1);
+		
 	}
 			if(a==2)
 			{
@@ -30,6 +34,7 @@ int main()
 					toplam2+=i;
 				}
 				printf("0'dan %d'e kadar %d'in katlari toplami= %d\n" , N, X,  toplam2);
+				
 			}
 			if(a==3)
 			{
@@ -45,11 +50,13 @@ int main()
 				if(a==0)
 				{
 				printf("Cikmayi tercih ettiniz.\nHoscakalin ^_^\n");
+				
 			}
 					if(a>3)
 					printf("Gecersiz bir deger girdiniz!!!\n");
-					system("pause");
-					return 0 ;
-			
+					
+			}
+			system("pause");
+			return 0 ;
 }
 	
