@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-
+        //birim çember ve integral yardımı ile pi sayısı hesaplama.
         int alt_deger=0,ust_deger=1;
         double h=0.0001;
         double sonuc=0;
