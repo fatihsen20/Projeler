@@ -1,0 +1,96 @@
+ls [dizin] : Dizin içeriğini gösterir. Dizin verilmezse içinde
+bulunulan dizini gösterir.
+Ör:
+fuzzyox@OneTeam ~ $ ls
+android-sdk-linux bin İndirilenler Müzik Resimler Videolar
+Belgeler Genel Masaüstü oneteam Şablonlar
+
+pwd : İçerisinde bulunulan dizinin adını/yolunu gösterir.
+Ör:
+fuzzyox@OneTeam ~ $ pwd
+/home/fuzzyox
+
+cd [dizin] : Verilen dizine gider. Dizin adı verilmezse ev
+dizinine gider.
+Ör:
+fuzzyox@OneTeam ~ $ cd oneteam
+fuzzyox@OneTeam ~/oneteam $
+                              Dizin Kısa Yolları​
+
+
+Bulunulan Dizin Kısa yolu ( . ):
+fuzzyox@OneTeam ~ $ls .
+android-sdk-linux bin İndirilenler Müzik Resimler Videolar
+Belgeler Genel Masaüstü oneteam Şablonlar
+
+Bir üst dizin kısayolu ( .. ):
+fuzzyox@OneTeam ~ $ls ..
+fuzzyox[/font]
+                              Diğer Komutlar​
+
+
+cp dosya ./hedefdizin/ : dizin dosya'yı hedefdizin'e kopyalar.
+Ör:
+fuzzyox@OneTeam ~ $ cd a
+fuzzyox@OneTeam ~/a $ ls
+b c.txt
+fuzzyox@OneTeam ~/a $ cp c.txt ./b/
+fuzzyox@OneTeam ~/a $ ls b
+c.txt
+
+mv: dosyayı taşımaya yarar.
+Ör:
+fuzzyox@OneTeam ~ $ cd a
+fuzzyox@OneTeam ~/a $ ls
+b c.txt
+fuzzyox@OneTeam ~/a $ mv c.txt ./b/
+fuzzyox@OneTeam ~/a $ ls
+b
+
+rm: dosyayı silmeye yarar.
+Ör:
+fuzzyox@OneTeam ~ $ cd a
+fuzzyox@OneTeam ~/a $ ls
+b c.txt
+fuzzyox@OneTeam ~/a $ rm c.txt
+fuzzyox@OneTeam ~/a $ ls
+b
+
+mkdir dizin : dizin adında yeni bir dizin oluşturur.
+Ör:
+fuzzyox@OneTeam ~ $ mkdir master
+
+rmdir dizin : dizin adındaki boş dizini siler.
+Ör:
+fuzzyox@OneTeam ~ $ rmdir master
+
+ssh Bağlantısı
+• SSH(Secure Shell/Güvenli Kabuk) ağ üzerinden başka
+bilgisayarlara erişim sağlamak, uzak bir bilgisayarda
+komutlar çalıştırmak ve bir bilgisayardan diğerine dosya
+transferi amaçlı geliştirilmiş bir protokoldür. Güvensiz
+kanallar(internet vs.) üzerinden güvenli haberleşme olanağı
+sağlar.
+Kullanımı: ssh -X kullanıcıAdı@sunucuAdresi
+• ssh -X fuzzyox @lnode1.uybhm.itu.edu.tr
+? ssh lnode1.uybhm.itu.edu.tr -l fuzzyox
+
+                                    Tuş İşlevleri​
+
+
+alt+f1:[font=verdana,geneva,sans-serif] sistem menüsünü açar
+alt+f2: komut başlatıcı açar
+alt+f4: odakta olan pencereyi kapatır
+alt+mouse: pencere taşımak için
+shift+del: kalıcı olarak bir dosyayı siler
+ctrl+alt+l: ekranı kilitler
+alt+tab: açık uygulamalar arasında kayar
+ctrl+backspace: tüm sözcüğü siler
+ctrl+z: geri alma
+ctrl+shift+z: yeniden yapma
+ctrl+a: tümünü seç
+ctrl+c: kopyala
+ctrl+x: kesme
+ctrl+v: yapıştır
+shift+arrow: tuş ile seçim
+ctrl+sağ-sol: sağdaki ve ya soldaki sözcüğüde seçmeye yarar
