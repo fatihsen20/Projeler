@@ -9,7 +9,7 @@ public class Palindrome {
     {
         palindrome=toUpperString(palindrome);
         for (int i = 0; i <palindrome.length() ; i++) {
-            if(palindrome.charAt(i)==palindrome.charAt(palindrome.length()-1)){
+            if(palindrome.charAt(i)==palindrome.charAt(palindrome.length()-i)){
                 System.out.println("Bu bir palindrome!");
                 break;
             }
