@@ -1,4 +1,3 @@
-package com.company;
 public class Point {
     private double x,y;
 
@@ -11,16 +10,16 @@ public class Point {
         return x;
     }
 
-    public void setX(double x) {
-        this.x = x;
+    public void setX(double x1) {
+        x = x1;
     }
 
     public double getY() {
         return y;
     }
 
-    public void setY(double y) {
-        this.y = y;
+    public void setY(double y1) {
+        y = y1;
     }
     public double uzaklik(Point c){
         double deger=Math.sqrt(Math.pow((x-c.x),2)+Math.pow((y-c.y),2));
@@ -33,7 +32,7 @@ public class Point {
             if (uzaklik(pointArray[i]) < min){
                 min = uzaklik(pointArray[i]);
                 sayac=i;
-        }
+            }
         }
         return pointArray[sayac];
     }
