@@ -1,0 +1,79 @@
+public class Complex {
+    private double reel,imaginel;
+
+    public double getReel() {
+        return reel;
+    }
+
+    public void setReel(double reel) {
+        this.reel = reel;
+    }
+
+    public double getImaginel() {
+        return imaginel;
+    }
+
+    public void setImaginel(double imaginel) {
+        this.imaginel = imaginel;
+    }
+    //Constructer overload edildi.
+    public Complex(Complex ComplexObj) {
+        reel=ComplexObj.reel;
+        imaginel=ComplexObj.imaginel;
+    }
+
+    public Complex(double reel, double imaginel) {
+        this.reel=reel;
+        this.imaginel=imaginel;
+    }
+    //Toplama metodu overload edildi.
+    public void addComplex (Complex c)
+    {
+        reel+=c.reel;
+        imaginel+=c.imaginel;
+    }
+    public void addComplex (double reel, double imaginel)
+    {
+        this.reel+=reel;
+        this.imaginel+=imaginel;
+    }
+
+    public void subtractComplex (Complex c)
+    {
+        reel-=c.reel;
+        imaginel-=c.imaginel;
+    }
+    //Çıkarma metodu overload edildi.
+    public void subtractComplex (double reel, double imaginel)
+    {
+        this.reel-=reel;
+        this.imaginel-=imaginel;
+    }
+
+    public void multiplyComplex (Complex c)
+    {
+        double a=reel;
+        double b=imaginel;
+        reel*=c.reel;
+        imaginel*=c.imaginel;
+        reel+=-(imaginel);
+        imaginel=a*c.imaginel+c.reel*b;
+    }
+    //Çarpma metodu overload edildi.
+    public void multiplyComplex (double reel, double imaginel)
+    {
+        double a=this.reel;
+        double b=this.imaginel;
+        this.reel*=reel;
+        this.imaginel*=imaginel;
+        this.reel+=-(this.imaginel);
+        this.imaginel=a*imaginel+ reel*b;
+    }
+
+    public String toString()
+    {
+        return (reel)+" "+(imaginel)+"i";
+    }
+
+
+}
