@@ -1,5 +1,3 @@
-package com.company;
-
 public class Rectangle {
     private double kisa,uzun,x,y;
 
@@ -7,39 +5,37 @@ public class Rectangle {
         return kisa;
     }
 
-    public void setKisa(double kisa) {
-        this.kisa = kisa;
+    public void setKisa(double S) {
+        kisa = S;
     }
 
     public double getUzun() {
         return uzun;
     }
 
-    public void setUzun(double uzun) {
-        this.uzun = uzun;
+    public void setUzun(double L) {
+        uzun = L;
     }
 
     public double getX() {
         return x;
     }
 
-    public void setX(double x) {
-        this.x = x;
+    public void setX(double S) {
+        x = S;
     }
 
     public double getY() {
         return y;
     }
 
-    public void setY(double y) {
-        this.y = y;
+    public void setY(double L) {
+        y = L;
     }
 
-    public Rectangle(double kisa, double uzun, double x, double y) {
+    public Rectangle(double kisa, double uzun) {
         this.kisa = kisa;
         this.uzun = uzun;
-        this.x = x;
-        this.y = y;
     }
     public void move(double deltaX,double deltaY){
         x+=deltaX;
