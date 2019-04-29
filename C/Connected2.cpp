@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 int birfazla(int sayi);
 int uckat(int sayi);
 float yarisi(int sayi);
@@ -16,7 +15,6 @@ int main(){
 		printf("%0.2f\n",yarisi(uckat(birfazla(girdi))));
 		}
 }
-		System("Pause");
 }
 int birfazla(int sayi){
 	return sayi=sayi+1;
