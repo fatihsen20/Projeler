@@ -6,7 +6,7 @@ int main(){
 	int girdi;
 	girdi=1;
 	while(girdi!=0){
-		printf("===========Cikmak Icin 0'a Basiniz==========\n");
+		printf("===========Cikmak Icin 0'a Basiniz===========\n");
 		printf("Lutfen bir sayi giriniz:");
 		scanf("%d",&girdi);
 		if(girdi!=0){
